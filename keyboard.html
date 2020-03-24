@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="https://kit.fontawesome.com/7abc1e19a9.js" crossorigin="anonymous"></script>
+	<title>Fake Keyboard</title>
+	<style>
+		.keyboard{
+			width: 680px;
+			height: 360px;
+			margin: 50px auto;
+			background-color: #D8D8D8;
+			padding: 8px;
+		}
+		.key{
+			transition: 0.2s;
+			display: inline-block;
+			position: relative;
+			z-index: 1;
+			background-color: #ffffff;
+			border-style-bottom: outset ;
+			border-color: #D8D8D8;
+		}
+		.line-1{
+			margin: 8px 0;
+			height: 80px;
+			width: 100%
+		}
+		.line-2{	
+			margin: 8px auto;
+			height: 80px;
+			width: 100%;
+			padding: 0 17px;
+		}
+		.line-3{
+			margin: 8px 0;
+			height: 80px;
+			width: 100%;
+		}
+		.line-4{
+			margin: 8px 0;
+			height: 80px;
+			width: 100%;
+		}
+		.key{
+			transition: 0.2s;
+			width: 60px;
+			height: 80px;
+			margin:0 4px;
+			border-radius: 12px;
+			outline: none;
+		}
+		.line-1 > .key{
+			float: left;
+		}
+		.upper{
+			float: left;
+			width: 80px;
+			height: 80px;
+			margin:0 4px;
+			border-radius: 12px;
+			outline: none;
+		}
+		.delete{
+			background-color: #909090;
+			float: right;
+			width: 80px;
+			height: 80px;
+			margin:0 4px;
+			border-radius: 12px;
+			outline: none;
+		}
+		.swap{
+			background-color: #909090;
+			float: left;
+			width: 90px;
+			height: 80px;
+			margin:0 4px;
+			border-radius: 12px;
+			outline: none;
+		}
+		.globe{
+			background-color: #909090;
+			float: left;
+			width: 90px;
+			height: 80px;
+			margin: 0 4px;
+			border-radius: 12px;
+			outline: none;
+		}
+		.space{
+			width: 264px;
+			height: 80px;
+			margin:0 4px;
+			border-radius: 12px;
+			outline: none;
+		}
+		.enter{ 
+			background-color: #909090;
+			float: right;
+			width: 128px;
+			height: 80px;
+			margin:0 4px;
+			border-radius: 12px;
+			outline: none; 
+		}
+		.key:hover {
+			position: relative;
+			height: 120px;
+			z-index: 3;
+			margin-top: -40px;
+			padding-bottom: 40px;
+		}
+		.line-2>.key:hover {
+			position: relative;
+			bottom: 40px;
+			height: 120px;
+			z-index: 3;
+			margin-top: -40px;
+			padding-bottom: 40px;
+		}
+		.line-3>.key:hover {
+			position: relative;
+			bottom: 40px;
+			height: 120px;
+			z-index: 3;
+			margin-top: -40px;
+			padding-bottom: 40px;
+		}
+		.upper:focus{
+			color: #0040ff;
+		}
+	</style>
+</head>
+<body>
+	<div class="keyboard">
+
+		<div class="line-1">
+			<button class="key">Q</button>
+			<button class="key">W</button>
+			<button class="key">E</button>
+			<button class="key">R</button>
+			<button class="key">T</button>
+			<button class="key">Y</button>
+			<button class="key">U</button>
+			<button class="key">I</button>
+			<button class="key">O</button>
+			<button class="key">P</button>
+		</div>
+		<div class="line-2">
+			<button class="key">A</button>
+			<button class="key">S</button>
+			<button class="key">D</button>
+			<button class="key">F</button>
+			<button class="key">G</button>
+			<button class="key">H</button>
+			<button class="key">J</button>
+			<button class="key">K</button>
+			<button class="key">L</button>
+		</div>
+		<div class="line-3">
+			<button class="upper"><i class="fas fa-angle-double-up"></i></button>
+			<button class="key">Z</button>
+			<button class="key">X</button>
+			<button class="key">C</button>
+			<button class="key">V</button>
+			<button class="key">B</button>
+			<button class="key">N</button>
+			<button class="key">M</button>
+			<button class="delete"><i class="fas fa-backspace"></i></button>
+		</div>
+		<div class="line-4">
+			<button class="swap">@</button>
+			<button class="globe"><i class="fas fa-globe"></i></button>
+			<button class="key" style="float: left;"><i class="fas fa-microphone"></i></button>
+			<button class="space">space</button>
+			<button class="enter"><i class="fas fa-check"></i></button>
+		</div>				
+	</div>
+
+</body>
+</html>
